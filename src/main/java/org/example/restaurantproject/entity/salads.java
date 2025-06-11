@@ -1,0 +1,50 @@
+package org.example.restaurantproject.entity;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "salads")
+public class salads {
+
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "salads_seq")
+    @SequenceGenerator(name = "salads_seq", sequenceName = "salads_seq", allocationSize = 1)
+    @Id
+    private Long id;
+
+    private String name;
+
+    private double price;
+
+    public salads() {
+    }
+
+    public salads(Long id, String name, double price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+}

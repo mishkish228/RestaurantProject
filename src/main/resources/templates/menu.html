@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3e0;
+        }
+
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            border: 1px solid #ff7043;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column; /* Чтобы кнопка была снизу */
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            color: #ff5722;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            margin: 5px 0;
+        }
+
+        .menu-item .order-button {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: auto; /* Кнопка внизу */
+            text-decoration: none; /* Убираем подчеркивание ссылки */
+            display: inline-block; /* Для корректной работы margin: auto */
+            text-align: center;
+        }
+
+        .menu-item .order-button:hover {
+            background-color: #e64a19;
+        }
+
+        footer {
+            background-color: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Название вашего сайта</h1>
+    <nav>
+        <ul>
+            <li><a href="index">Главная</a></li>
+            <li><a href="menu">Меню</a></li>
+            <li><a href="about">О нас</a></li>
+            <li><a href="contacts">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Наше меню</h2>
+    <p>Здесь вы можете найти все наши вкусные позиции. Выберите то, что вам понравится!</p>
+
+    <section class="menu-container">
+
+        <div class="menu-item">
+            <img src="" alt="Сочный бургер">
+            <h3>Сочный бургер</h3>
+            <p>Классический бургер с говяжьей котлетой, сыром и овощами.</p>
+            <p>Цена: 450р</p>
+            <a href="#" class="order-button">Заказать</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="" alt="Пицца Маргарита">
+            <h3>Пицца Маргарита</h3>
+            <p>Простая и вкусная пицца с томатом, моцареллой и базиликом.</p>
+            <p>Цена: 500р</p>
+            <a href="#" class="order-button">Заказать</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="" alt="Роллы Филадельфия">
+            <h3>Роллы Филадельфия</h3>
+            <p>Нежные роллы с лососем, сливочным сыром и авокадо.</p>
+            <p>Цена: 600р</p>
+            <a href="#" class="order-button">Заказать</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="" alt="Паста Карбонара">
+            <h3>Паста Карбонара</h3>
+            <p>Традиционная паста с беконом, яйцом и пармезаном.</p>
+            <p>Цена: 550р</p>
+            <a href="#" class="order-button">Заказать</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="" alt="Салат Цезарь">
+            <h3>Салат Цезарь</h3>
+            <p>Свежий салат с курицей, гренками и соусом цезарь.</p>
+            <p>Цена: 400р</p>
+            <a href="#" class="order-button">Заказать</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="" alt="Кока-кола">
+            <h3>Кока-кола</h3>
+            <p>Охлаждающий напиток кока-кола.</p>
+            <p>Цена: 150р</p>
+            <a href="#" class="order-button">Заказать</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="" alt="Зеленый чай">
+            <h3>Зеленый чай</h3>
+            <p>Бодрящий зеленый чай с жасмином.</p>
+            <p>Цена: 120р</p>
+            <a href="#" class="order-button">Заказать</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="" alt="Американо">
+            <h3>Американо</h3>
+            <p>Классический черный кофе американо.</p>
+            <p>Цена: 180р</p>
+            <a href="#" class="order-button">Заказать</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="" alt="Апельсиновый сок">
+            <h3>Апельсиновый сок</h3>
+            <p>Свежевыжатый апельсиновый сок.</p>
+            <p>Цена: 200р</p>
+            <a href="#" class="order-button">Заказать</a>
+        </div>
+        <div class="menu-item">
+            <img src="" alt="Минеральная вода">
+            <h3>Минеральная вода</h3>
+            <p>Охлажденная минеральная вода.</p>
+            <p>Цена: 100р</p>
+            <a href="#" class="order-button">Заказать</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
+</footer>
+</body>
+</html>
