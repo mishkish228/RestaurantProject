@@ -3,7 +3,7 @@ package org.example.restaurantproject.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "salads")
+@Table(name = "saladsConfig")
 public class salads {
 
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "salads_seq")
